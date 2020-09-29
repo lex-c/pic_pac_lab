@@ -31,7 +31,7 @@ class PicPacPoe():
         self.curr_row = int(self.curr_move[1])
 
     def is_not_valid_entry(self): 
-        if self.curr_column not in ('a', 'b', 'c') or self.curr_row not in (1, 2, 3):
+        if self.curr_column not in ('a', 'b', 'c') or self.curr_row not in (1, 2, 3) or len(self.curr_move) != 2:
             print('not valid entry')
             return True
 
